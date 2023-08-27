@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyLab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: black;
+        }
+
+        body>div {
+            margin: auto;
+            max-width: 1250px;
+            background: white;
+            height: 100vh;
+        }
+
+        body>div>div {
+            display: flex;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            height: 60px;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        }
+
+        #logo {
+            background-image: linear-gradient(to right, #e04beb, #3c96e4);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 40px;
+            width: 155px;
+        }
+
+        #logo>h2 {
+            margin: 0 15px;
+            color: white;
+            font: 24px "Poppins";
+            font-weight: 700;
+        }
+
+        #navigation {
+            margin-right: 130px;
+            display: flex;
+        }
+
+        #navigation>p>a {
+            text-decoration: none;
+            margin: 0px 19px;
+            font: 15px "Poppins";
+            font-weight: 600;
+            color: black;
+        }
+
+        #navigation>#home>a {
+            color: #3c96e4;
+        }
+
+        #main {
+            justify-content: space-between;
+        }
+
+        #main>div {
+            /* width: 40%; */
+            margin-top: 30px;
+        }
+
+        #primary {
+            width: 40%;
+            margin-left: 40px;
+        }
+
+        #firstp {
+            font: 13px "Poppins";
+            font-weight: 700;
+            color: #3c96e4;
+            margin-top: 60px;
+        }
+
+        h1 {
+            font: 34px "Poppins";
+            margin-top: 10px;
+            font-weight: 600;
+            color: rgb(55, 55, 55);
+        }
+        .secondp{
+            margin: 30px 0px;
+        }
+        .secondp, #secondary>div>div>p {
+            font: 16px "Poppins";
+            font-weight: 500;
+            color: rgb(171, 171, 171);
+        }
+
+        #primary>div {
+            display: flex;
+            align-items: center;
+        }
+
+        #primary>div>img {
+            width: 180px;
+        }
+
+        #primary>div>p   {
+            padding: 20px;
+            font: 18px "Poppins";
+            font-weight: 500;
+            color: rgb(55, 55, 55);
+        }
+
+        #secondary {
+            width: 43%;
+            height: 600px;
+            margin-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #secondary>div {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        #secondary>div>div {
+            height: 245px;
+            width: 40%;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+        }
+
+        #secondary>div>div>h3{
+            font: 18px "Poppins";
+            font-weight: 600;
+        }
+
+        #secondary>div>div>p {
+            margin-top: 18px;
+        }
+
+        #secondary>div>div>img {
+            width: 55px;
+        }
+
+        #name{
+            color: rgb(244, 159, 159);
+            text-align: end;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="navbar">
+            <div id="logo">
+                <h2>StudyLab</h2>
+            </div>
+            <div id="navigation">
+                <p id="home"><a href="#">Home</a></p>
+                <p><a href="#">About</a></p>
+                <p><a href="#">Course</a></p>
+                <p><a href="#">Instructor</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Contact</a></p>
+            </div>
+        </div>
+        <div id="main">
+            <div id="primary">
+                <p id="firstp">WELCOME TO STUDY LAB</p>
+                <h1>We Are StudyLab An Online Learning Center</h1>
+                <p class="secondp">A small river named Duben flows by their place and supplies it with the necessary
+                    regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p class="secondp">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.</p>
+                <div>
+                    <img src="https://st.depositphotos.com/1017986/3677/i/450/depositphotos_36777239-stock-photo-students-with-laptop-and-notebooks.jpg"
+                        alt="">
+                    <p>Learn anything with StudyLab, Watch video</p>
+                </div>
+            </div>
+
+            <div id="secondary">
+                <div>
+                    <div>
+                        <img src="https://codeboxr.com/wp-content/uploads/productshots/8171/ip_cookie_icon.svg" alt="">
+                        <h3>Top Quality Content</h3>
+                        <p>A small river named Duben flows by their place and supplies</p>
+                    </div>
+                    <div>
+                        <img src="https://codeboxr.com/wp-content/uploads/productshots/8171/guest_control_icon.svg"
+                            alt="">
+                        <h3>Highly Skilled Instructor</h3>
+                        <p>A small river named Duben flows by their place and supplies</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://codeboxr.com/wp-content/uploads/productshots/8171/poll_system_icon.svg"
+                            alt="">
+                        <h3>World Class & Quiz</h3>
+                        <p>A small river named Duben flows by their place and supplies</p>
+                    </div>
+                    <div>
+                        <img src="https://codeboxr.com/wp-content/uploads/productshots/8171/voting_control_icon.svg"
+                            alt="">
+                        <h3>Get Certified</h3>
+                        <p>A small river named Duben flows by their place and supplies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <p id="name">&ltMade by: MIHIR SONI/&gt</p>
+</body>
+
+</html>

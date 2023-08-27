@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chess Board</title>
+    <style>
+        #chess {
+            width: min(96vh, 96vw);
+            height: min(96vh, 96vw);
+            border: 2px solid rgb(79, 3, 3);
+            display: grid;
+            grid-template-columns: 0.5fr 8fr 0.5fr;
+            grid-template-rows: 0.5fr 8fr 0.5fr;
+            margin: auto;
+        }
+
+        #chess>div {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            border: 2px solid rgb(79, 3, 3);
+
+        }
+
+        /*#main {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            position: absolute;
+            gap: 15px;
+        }
+
+        #chess>div>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sq1:nth-child(even) {
+            background-color: rgb(113, 25, 25);
+        }
+
+        .sq1:nth-child(odd) {
+            background-color: rgb(190, 178, 178);
+        }
+
+        .sq2:nth-child(odd) {
+            background-color: rgb(113, 25, 25);
+        }
+
+        .sq2:nth-child(even) {
+            background-color: rgb(190, 178, 178);
+        }
+
+        img {
+            height: min(10vh, 10vw);
+            background: none;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="chess">
+        <div></div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div class="sq1"><img src="Black Rook.png" alt=""></div>
+            <div class="sq1"><img src="Black Knight.png" alt=""></div>
+            <div class="sq1"><img src="Black Bishop.png" alt=""></div>
+            <div class="sq1"><img src="Black Queen.png" alt=""></div>
+            <div class="sq1"><img src="Black King.png" alt=""></div>
+            <div class="sq1"><img src="Black Bishop.png" alt=""></div>
+            <div class="sq1"><img src="Black Knight.png" alt=""></div>
+            <div class="sq1"><img src="Black Rook.png" alt=""></div>
+
+            <div class="sq2"><img src="Black Pawn.png" alt=""></div>
+            <div class="sq2"><img src="Black Pawn.png" alt=""></div>
+            <div class="sq2"><img src="Black Pawn.png" alt=""></div>
+            <div class="sq2"><img src="Black Pawn.png" alt=""></div>
+            <div class="sq2"><img src="Black Pawn.png" alt=""></div>
+            <div class="sq2"><img src="Black Pawn.png" alt=""></div>
+            <div class="sq2"><img src="Black Pawn.png" alt=""></div>
+            <div class="sq2"><img src="Black Pawn.png" alt=""></div>
+
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+            <div class="sq1"></div>
+
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+            <div class="sq2"></div>
+
+            <div class="sq1"><img src="White Pawn.png" alt=""></div>
+            <div class="sq1"><img src="White Pawn.png" alt=""></div>
+            <div class="sq1"><img src="White Pawn.png" alt=""></div>
+            <div class="sq1"><img src="White Pawn.png" alt=""></div>
+            <div class="sq1"><img src="White Pawn.png" alt=""></div>
+            <div class="sq1"><img src="White Pawn.png" alt=""></div>
+            <div class="sq1"><img src="White Pawn.png" alt=""></div>
+            <div class="sq1"><img src="White Pawn.png" alt=""></div>
+
+            <div class="sq2"><img src="White Rook.png" alt=""></div>
+            <div class="sq2"><img src="White Knight.png" alt=""></div>
+            <div class="sq2"><img src="White Bishop.png" alt=""></div>
+            <div class="sq2"><img src="White Queen.png" alt=""></div>
+            <div class="sq2"><img src="White King.png" alt=""></div>
+            <div class="sq2"><img src="White Bishop.png" alt=""></div>
+            <div class="sq2"><img src="White Knight.png" alt=""></div>
+            <div class="sq2"><img src="White Rook.png" alt=""></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+        <div><div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

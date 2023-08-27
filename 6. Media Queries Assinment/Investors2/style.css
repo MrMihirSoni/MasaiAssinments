@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0 1rem;
+    max-width: 1300px;
+    margin: auto;
+}
+#main{
+    margin-top: 5rem;
+}
+h1{
+    text-align: center;
+    font: 1.5rem "Poppins";
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+#main>div>p{
+    font: 0.9rem "Open Sans";
+    margin-bottom: 4rem;
+    color: #544D4F;
+    text-align: center;
+    line-height: 1.5rem;
+}
+#main>div:nth-child(2)>div:first-child{
+    border-bottom: 2px solid #544D4F;
+
+}
+#main>div:nth-child(2)>div:first-child>p{
+    margin-bottom: 2rem;
+    font: 1rem "Poppins";
+    text-align: center;
+    font-weight: 800;
+}
+#main>div:nth-child(2)>div:nth-child(2)>p{
+    font: 0.9rem "Open Sans";
+    margin-bottom: 4rem;
+    color: #544D4F;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+#boardMembers>h3,
+#investors>h3{
+    text-align: center;
+    font: 1.5rem "Poppins";
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+#boardMembers>div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#boardMembers>div>img{
+    width: 0.3fr;
+}
+#investors{
+    margin-top: 2rem;
+}
+#investors>div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+#investors>div>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px 20px 0 0;
+    max-width: 300px;
+}
+#investors>div>div>img:first-child{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+#investors>div>div>h3{
+    text-align: center;
+    font: 1rem "Poppins";
+    font-weight: 700;
+    margin-top: 1rem;
+}
+#investors>div>div>p{
+    text-align: center;
+    font: 1rem "Open Sans";
+    margin-top: 1rem;
+}
+#investors>div>div>img:last-child{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+#name{
+    margin-top: 4rem;
+    text-align: end;
+    font: 1.4rem "Open Sans";
+    color: rgb(184, 117, 30);
+}
+@media all and (min-width:420px){
+    #investors>div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (min-width:620px){
+    h1{
+        font-size: 3rem;
+    }
+    #main>div:nth-child(2)>div:first-child>p{
+        font-size: 2rem;
+    }
+    #boardMembers>div{
+        flex-direction: row;
+    }   
+    #boardMembers>h3,#investors>h3{
+        font-size: 2rem;
+    }
+}
+@media all and (min-width:820px){
+    h1{
+        font-size: 4rem;
+    }
+    #main>div:first-child>p{
+        font-size: 1.6rem;
+    }
+    #main>div:nth-child(2){
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }   
+    #main>div:nth-child(2)>div{
+        width: 45%;
+    }
+    #main>div:nth-child(2)>div:first-child{
+        border-right: 2px solid #544D4F;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #main>div:nth-child(2)>div:first-child>p{
+        width: 80%;
+    }
+    #investors>div{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media all and (min-width:1020px){
+    #investors>div{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

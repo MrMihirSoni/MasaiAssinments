@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 80%;
+    margin:auto;
+    margin-top: 40px;
+}
+
+#main>div{
+    border-radius: 10px;
+    padding: 7%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#main>div>div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font: 20px "Poppins";
+    font-weight: 800;
+}
+
+#main>div>div>p:nth-child(2){
+    color: goldenrod;
+}
+
+#main>div>p{
+    font: 15px "Poppins";
+    color: rgb(166, 161, 161);
+}
+
+@media all and (min-width:1030px) and (max-width:1250px){
+    #main{
+        gap: 20px;
+        width: 95%;
+    }
+}
+
+@media all and (min-width:810px) and (max-width:1030px){
+    #main{
+        gap: 20px;
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (min-width:680px) and (max-width:810px){
+    #main{
+        gap: 20px;
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (min-width:500px) and (max-width:680px){
+    #main{
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+
+    }   
+}
+
+@media all and (max-width:500px){
+    #main{
+        gap: 20px;
+        width: 95%;
+        grid-template-columns: repeat(1, 1fr);
+
+    }   
+}
