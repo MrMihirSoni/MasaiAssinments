@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivision Assinment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            text-align: center;
+            margin: auto;
+        }
+        #main{
+            margin: 30px 0px;
+        }
+        #myInput,#myButton{
+            height: 30px;
+            font-size: 20px;
+            border-radius: 7px;
+            margin: 0 5px;
+        }
+        #result{
+            font: 32px "Poppins";
+        }
+    </style>
+</head>
+<body>
+    <div id="main"><input type="text" id="myInput" placeholder="Enter your Text"><button id="myButton" onclick="submit()">Submit</button></div>
+    
+    <h1 id="result">Entered Value:</h1>
+</body>
+<script>
+    let inp = document.getElementById("myInput");
+    let res = document.getElementById("result");
+    let submit = ()=>{
+        res.innerText += " "+inp.value;
+        alert(res.innerText);
+    }
+</script>
+</html>
