@@ -108,6 +108,9 @@
 
     C.addEventListener("click", ()=> result.innerText="");
     
-    equal.addEventListener("click", ()=> result.innerText = eval(result.innerText));
+    equal.addEventListener("click", ()=> {
+        let newresult = result.innerText.replaceAll("x", "*");
+        result.innerText = eval(newresult)
+    });
 </script>
 </html>
