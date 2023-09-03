@@ -72,22 +72,22 @@
     <div id="main">
         <div id="result"></div>
         <div>
-            <div class="number">1</div>
-            <div class="number">2</div>
-            <div class="number">3</div>
-            <div class="symbol">+</div>
-            <div class="number">4</div>
-            <div class="number">5</div>
-            <div class="number">6</div>
-            <div class="symbol">-</div>
-            <div class="number">7</div>
-            <div class="number">8</div>
-            <div class="number">9</div>
-            <div class="symbol">x</div>
+            <div class="number btn ">1</div>
+            <div class="number btn ">2</div>
+            <div class="number btn">3</div>
+            <div class="symbol btn">+</div>
+            <div class="number btn">4</div>
+            <div class="number btn">5</div>
+            <div class="number btn">6</div>
+            <div class="symbol btn">-</div>
+            <div class="number btn">7</div>
+            <div class="number btn">8</div>
+            <div class="number btn">9</div>
+            <div class="symbol btn">x</div>
             <div id="C">C</div>
-            <div class="number">0</div>
+            <div class="number btn">0</div>
             <div id="equal">=</div>
-            <div class="symbol">/</div>
+            <div class="symbol btn">/</div>
         </div>
     </div>
 </header>
@@ -100,10 +100,14 @@
     let equal = document.getElementById("equal");
     let C = document.getElementById("C");
 
-    let btn = document.querySelectorAll("#main>div:nth-child(2)>div");
-    btn.addEventListener("click", ()=>{
-        result.innerText+=btn.innerText
-    })
+
+    result.innerText="";
+    let btn = document.querySelectorAll(".btn");
     
+    for(let i=0; i<btn.length; i++) btn[i].addEventListener("click", ()=> result.innerText += btn[i].innerText);
+
+    C.addEventListener("click", ()=> result.innerText="");
+    
+    equal.addEventListener("click", ()=> result.innerText = eval(result.innerText));
 </script>
 </html>
