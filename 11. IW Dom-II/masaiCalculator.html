@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+        header{
+            display:flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        h1{
+            margin-bottom: 70px;
+            font-size: 45px;
+            color: rgb(36, 122, 113);
+        }
+        div{
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 340px;
+            height: 400px;
+            padding-bottom: 20px;
+        }
+        #main>div:first-child{
+            height: 60px;
+            width: 258px;
+            margin-bottom: 10px;
+        }
+        #main>div:last-child{
+            display: grid;
+            grid-template-columns: repeat(4, 60px);
+            grid-template-rows: repeat(4, 60px);
+            gap: 6px;
+            box-shadow: none;
+        }
+        #main>div:last-child>div{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #main>div:last-child>div:nth-child(4),
+        #main>div:last-child>div:nth-child(8),
+        #main>div:last-child>div:nth-child(12),
+        #main>div:last-child>div:nth-child(15),
+        #main>div:last-child>div:nth-child(16)
+        {
+            background-color: black;
+            color: white;
+        }
+        #main>div:last-child>div:nth-child(13){
+            background-color: red;
+            color: white;
+        }
+        #name{
+            color: rgb(253, 157, 55);
+            text-align: end;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Masai Calculator</h1>
+    <div id="main">
+        <div id="result"></div>
+        <div>
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="symbol">+</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="symbol">-</div>
+            <div class="number">7</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+            <div class="symbol">x</div>
+            <div id="C">C</div>
+            <div class="number">0</div>
+            <div id="equal">=</div>
+            <div class="symbol">/</div>
+        </div>
+    </div>
+</header>
+    <p id="name">&ltMade by: MIHIR SONI/&gt</p>
+</body>
+<script>
+    let result = document.getElementById("result");
+    let number = document.getElementsByClassName("number");
+    let symbol = document.getElementsByClassName("symbol");
+    let equal = document.getElementById("equal");
+    let C = document.getElementById("C");
+
+    let btn = document.querySelectorAll("#main>div:nth-child(2)>div");
+    btn.addEventListener("click", ()=>{
+        result.innerText+=btn.innerText
+    })
+    
+</script>
+</html>
