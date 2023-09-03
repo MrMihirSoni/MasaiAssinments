@@ -12,6 +12,7 @@ myForm.addEventListener("submit",event=>{
         priority : priority.value
     }
     allTask.push(data);
+    
     tbody.innerHTML="";
     allTask.map(ele=>{
         const tr = document.createElement("tr");
@@ -24,7 +25,6 @@ myForm.addEventListener("submit",event=>{
         tr.append(td1,td2);
         tbody.append(tr);
     })
-    
 })
 
 
