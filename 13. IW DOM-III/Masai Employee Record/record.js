@@ -1,11 +1,12 @@
 // fill in javascript code here
+
 const form = document.querySelector("form");
 const empName = document.querySelector("#name");
-const empID = document.querySelector("employeeID");
-const empDepartment = document.querySelector("department");
-const empXp = document.querySelector("exp");
-const empEmail = document.querySelector("email");
-const empMob = document.querySelector("mbl");
+const empId = document.querySelector("#employeeID");
+const empDepartment = document.querySelector("#department");
+const empXp = document.querySelector("#exp");
+const empEmail = document.querySelector("#email");
+const empMob = document.querySelector("#mbl");
 const tbody = document.querySelector("tbody");
 
 const allRecord = [];
@@ -13,7 +14,7 @@ form.addEventListener("submit", event=>{
     event.preventDefault();
     let data = {
         name : empName.value,
-        ID : empID.value,
+        ID : empId.value,
         department : empDepartment.value,
         experience : empXp.value,
         email : empEmail.value,
