@@ -28,13 +28,13 @@
     <h3></h3>
 </body>
 <script>
-    let heigth = document.querySelector("body>input:nth-child(4)");
+    let hight = document.querySelector("body>input:nth-child(4)");
     let width = document.querySelector("body>input:nth-child(6)");
     let calculate = document.querySelector("button");
     let result = document.querySelector("body>h3:nth-child(8)");
 
     calculate.addEventListener("click", ()=>{
-        let BMI = (+width.value)/(+height.value);
+        let BMI = +width.value/+hight.value;
         let BMIResult = "";
         if(BMI<18.5) BMIResult = "Under Weigth";
         else if(BMI>=18.5 && BMI<25) BMIResult = "Normal";
