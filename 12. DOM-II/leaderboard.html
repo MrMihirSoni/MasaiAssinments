@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #minmax{
+        display: flex;
+        justify-content: space-between;
+        max-width: 400px;
+        margin: 50px auto;
+        /* margin-bottom: 50px; */
+    }
+    #minmax>div>div:first-child{
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 15px;
+    }
+    #minmax>div:first-child>div:first-child{
+        background-color: greenyellow;
+    }
+    #minmax>div:nth-child(2)>div:first-child{
+        background-color: rgb(229, 95, 95);
+    }
+    #main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 300px;
+        margin: auto;
+        row-gap: 20px;
+        column-gap: 50px;
+    }
+    #main>div{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 15px;
+    }
+    #main>div:first-child,#main>div:nth-child(14){
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #main>div:nth-child(11),#main>div:nth-child(13){
+        border: none;
+        box-shadow: none;
+    }
+
+</style>
+<body>
+    <div id="minmax">
+        <div>
+            <div id="min">50</div>
+            <div>MIN</div>
+        </div>
+        <div>
+            <div id="max">100</div>
+            <div>Max</div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="score"></div>
+        <div class="buttons">1</div>
+        <div class="buttons">2</div>
+        <div class="buttons">3</div>
+        <div class="buttons">4</div>
+        <div class="buttons">5</div>
+        <div class="buttons">6</div>
+        <div class="buttons">7</div>
+        <div class="buttons">8</div>
+        <div class="buttons">9</div>
+        <div></div>
+        <div class="buttons">0</div>
+        <div></div>
+        <div id="enter">ENTER</div>
+    </div>
+</body>
+<script>
+    let input = document.querySelectorAll(".buttons");
+    let enter = document.getElementById("enter");
+    let score = document.getElementById("score");
+    let min = document.getElementById("min");
+    let max = document.getElementById("max");
+    input.forEach(element => element.addEventListener("click", ()=> score.innerText += element.innerText));
+
+    enter.addEventListener("click", ()=>{
+        if(Number(score.innerText)<Number(min.innerText)) min.innerText=score.innerText;
+        if(Number(score.innerText)>Number(max.innerText)) max.innerText=score.innerText;
+        score.innerText="";
+    })
+</script>
+</html>
