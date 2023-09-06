@@ -40,7 +40,7 @@
         #main>div:last-child{
             display: grid;
             grid-template-columns: repeat(4, 60px);
-            grid-template-rows: repeat(4, 60px);
+            grid-template-rows: repeat(5, 60px);
             gap: 6px;
             box-shadow: none;
         }
@@ -54,13 +54,14 @@
         #main>div:last-child>div:nth-child(4),
         #main>div:last-child>div:nth-child(8),
         #main>div:last-child>div:nth-child(12),
-        #main>div:last-child>div:nth-child(15),
-        #main>div:last-child>div:nth-child(16)
+        #main>div:last-child>div:nth-child(16),
+        #main>div:last-child>div:nth-child(2),
+        #main>div:last-child>div:nth-child(3)
         {
             background-color: black;
             color: white;
         }
-        #main>div:last-child>div:nth-child(13){
+        #main>div:last-child>div:first-child{
             background-color: red;
             color: white;
         }
@@ -77,22 +78,26 @@
     <div id="main">
         <div id="result"></div>
         <div>
+            <div id="C">C</div>
+            <div id="back">&lt</div>
+            <div id="equal">=</div>
+            <div class="symbol btn">+</div>
+            
             <div class="number btn ">1</div>
             <div class="number btn ">2</div>
             <div class="number btn">3</div>
-            <div class="symbol btn">+</div>
+            <div class="symbol btn">-</div>
             <div class="number btn">4</div>
             <div class="number btn">5</div>
             <div class="number btn">6</div>
-            <div class="symbol btn">-</div>
+            <div class="symbol btn">x</div>
             <div class="number btn">7</div>
             <div class="number btn">8</div>
             <div class="number btn">9</div>
-            <div class="symbol btn">x</div>
-            <div id="C">C</div>
-            <div class="number btn">0</div>
-            <div id="equal">=</div>
             <div class="symbol btn">/</div>
+            <div>00</div>
+            <div class="number btn">0</div>
+            <div>.</div>
         </div>
     </div>
 </header>
@@ -104,6 +109,7 @@
     let symbol = document.getElementsByClassName("symbol");
     let equal = document.getElementById("equal");
     let C = document.getElementById("C");
+    let back = document.getElementById("back");
 
 
     result.innerText="";
@@ -113,6 +119,9 @@
 
     C.addEventListener("click", ()=> result.innerText="");
     
+    back.addEventListener("click", ()=>{
+        result.innerText=result.innerText.slice(0,result.innerText.length-1)
+    })
     equal.addEventListener("click", ()=> {
         let newresult = result.innerText.replaceAll("x", "*");
         result.innerText = eval(newresult)
