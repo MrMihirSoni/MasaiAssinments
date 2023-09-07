@@ -13,7 +13,7 @@ myForm.addEventListener("submit",event=>{
     }
     allTask.push(data);
     
-    // tbody.innerHTML="";
+    tbody.innerHTML="";
     allTask.map(ele=>{
         const tr = document.createElement("tr");
         const td1 = document.createElement("td");
@@ -24,9 +24,8 @@ myForm.addEventListener("submit",event=>{
 
         tr.append(td1,td2);
         tbody.append(tr);
-
-        if(priority.value=="High") td2.style.backgroundColor="red"
-        else td2.style.backgroundColor="green"
+        if(ele.priority=="High") td2.style.backgroundColor="red";
+        else td2.style.backgroundColor="green";
     })
 })
 
