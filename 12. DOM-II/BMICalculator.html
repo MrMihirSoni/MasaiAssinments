@@ -22,7 +22,7 @@
     <h3>Enter your weight and height to check your BMI results</h3>
     <h3>Enter your Heigth(In meters)</h3>
     <input type="number">
-    <h3>Enter your height(In kilograms)</h3>
+    <h3>Enter your Weight(In kilograms)</h3>
     <input type="number">
     <button>Calculate BMI</button>
     <h3></h3>
@@ -34,7 +34,7 @@
     let result = document.querySelector("body>h3:nth-child(8)");
 
     calculate.addEventListener("click", ()=>{
-        let BMI = +width.value/+hight.value;
+        let BMI = Number(width.value)/(Number(hight.value)*Number(hight.value));
         let BMIResult = "";
         if(BMI<18.5) BMIResult = "Under Weigth";
         else if(BMI>=18.5 && BMI<25) BMIResult = "Normal";
