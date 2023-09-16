@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    margin: 30px;
+    text-align: center;
+    font: 34px "Poppins";
+    font-weight: bold;
+}
+#box{
+    width: 95%;
+    margin: auto;
+    max-width: 800px;
+    max-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#stopWatch{
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 5px;
+    font: 34px "Poppins";
+    text-align: center;
+}
+button{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: rgb(95, 104, 113);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+}
+button:hover{
+    background-color: rgb(82, 85, 89);
+    cursor: pointer;
+}
+button:active{
+    background-color: rgb(51, 52, 54);
+}
