@@ -10,7 +10,7 @@ h1{
     font-weight: bold;
 }
 
-img{
+body>img{
     width: 800px;
     height: 400px;
     display: block;margin: auto;
@@ -29,6 +29,11 @@ button{
     width: 60px;
     height: 60px;
     border: none;
-    border-radius: 10px;
+    border-radius: 50%;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background-color: rgb(229, 128, 128);
+}
+body>div>img{
+    height: 60px;
+    width: 60px;
 }

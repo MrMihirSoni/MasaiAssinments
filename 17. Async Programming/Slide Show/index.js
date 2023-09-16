@@ -22,25 +22,50 @@ let data = ["https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/1
 ];
 
 let myImage = document.querySelector("img");
+let Pause = document.getElementById("Pause");
+let Play = document.getElementById("Play");
+
+Play.style.display="none"
 
 let i=0;
 let timer = null;
 
 function slideShow(){
     i++;
+    if(i==data.length) i=0;
     myImage.src=data[i];
-    
 }
-timer = setInterval(slideShow,3000)
+
+timer = setInterval(slideShow,2000);
+
+function pause(){
+    Pause.style.display="none";
+    Play.style.display="block";
+    clearInterval(timer);
+}
+
+function play(){
+    Pause.style.display="block";
+    Play.style.display="none";
+    timer = setInterval(slideShow,2000);
+}
 
 function leftSlide(){
+    Pause.style.display="block";
+    Play.style.display="none";
     clearInterval(timer)
     i--;
+    if(i==-1) i=data.length-1;
     myImage.src=data[i]
+    timer = setInterval(slideShow,2000);
 }
 
 function rightSlide(){
+    Pause.style.display="block";
+    Play.style.display="none";
     clearInterval(timer);
     i++;
+    if(i==data.length) i=0;
     myImage.src=data[i]
+    timer = setInterval(slideShow,2000);
 }
