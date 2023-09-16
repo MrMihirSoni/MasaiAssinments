@@ -68,6 +68,7 @@ function pause(){
     clearInterval(timer);
 }
 function reset(){
+    Restart.style.display="none";
     Pause.style.display="none";
     Start.style.display="inline-block";
     Reset.style.display="none";
