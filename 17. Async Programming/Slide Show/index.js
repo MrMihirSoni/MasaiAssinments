@@ -29,17 +29,9 @@ let timer = null;
 function slideShow(){
     i++;
     myImage.src=data[i];
-    // if(i=data.length) i=0;
     
 }
-
-function animationStart(){
-    timer = setInterval(slideShow,3000)
-}
-
-function animationStop(){
-    clearInterval(timer)
-}
+timer = setInterval(slideShow,3000)
 
 function leftSlide(){
     clearInterval(timer)
