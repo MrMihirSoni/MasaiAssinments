@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    position: fixed;
+    margin-top: -60px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+}
+#logo{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logoImg{
+    height: 58px;
+    border: 2px solid rgb(94, 31, 31);
+    border-radius: 50%;
+}
+#logo>p{
+    font: 20px "Poppins";
+    color: orange;
+    cursor: pointer;
+}
+#logo>p:active{
+    color: rgb(181, 120, 8);
+}
+#navigation{
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+#navigation>div{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #6b0303;
+    padding: 5px;
+    border-radius: 30px;
+}
+#navigation>div>a{
+    font: 22px "Poppins";
+    color: rgb(251, 157, 43);
+    text-decoration: none;
+    cursor: pointer;
+}
+#navigation>div>a:active{
+    color: rgb(192, 109, 8);;
+}
+#searchBar{
+    display: flex;
+    align-items: center;
+}
+#searchBar>input{
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font: 18px "Poppins";
+    background-color: rgb(165, 227, 165);
+}
+#searchBar>#searchBarLogo{
+    height: 40px;
+    position: absolute;
+    border-radius: 30px;
+    border: 2px solid rgb(138, 56, 56);
+    display: block;
+    margin-left: 210px;
+    cursor: pointer;
+}
+#searchBar>#searchBarLogo:active{
+    opacity: 0.7;
+}

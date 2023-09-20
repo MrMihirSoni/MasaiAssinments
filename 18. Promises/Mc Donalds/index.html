@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>The Mihir's Haven</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div id="navbar">
+        <div id="logo">
+            <img id="logoImg" src="data:image/png;base64,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" alt="">
+            <p>The Mihir's Haven</p>
+        </div>
+        <div id="navigation">
+            <div>
+                <a href="#intro">Home</a>
+                <a href="#menu">Menu</a>
+            </div>
+        </div>
+        <div id="searchBar">
+            <input id="searchF" type="text" placeholder="Search">
+            <img id="searchBarLogo" src="data:image/png;base64,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" alt="">
+        </div>
+    </div>
+    
+    <!-- Intro Section -->
+    <div id="intro">
+        <div>
+            <h1>The Mihir's Haven</h1>
+            <p>Location: 123 Main Street, Cityville</p>
+            <p>Contact: Phone: (555) 123-4567 | Email: info@mihirhaven.com</p>
+        </div>
+        <div>
+            <p>About Us: The Mihir's Haven is a culinary haven for food enthusiasts seeking an exceptional dining experience. Our restaurant is known for its elegant ambiance, attentive service, and a menu curated to delight the most discerning palates.</p>
+            <p>Operating Hours:</p>
+            <p>Monday to Friday: 5:00 PM - 10:00 PM</p>
+            <p>Saturday: 12:00 PM - 11:00 PM</p>
+            <p>Sunday: Closed</p>
+            <p>Reservations: We recommend making reservations in advance to secure your table for a memorable dining experience. You can book online through our website or contact us via phone.</p>
+            <p>Dress Code: Smart casual attire is encouraged to enhance your dining experience.</p>
+            <p>We look forward to welcoming you to The Gourmet Haven and providing you with an unforgettable culinary journey.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Menu Section -->
+    <div id="menu">
+        <h1><---Our MENU---></h1>
+        <div id="menuList">
+            <div class="menuItem">
+                <div><img src="https://images.jdmagicbox.com/comp/bangalore/v3/080pxx80.xx80.180516130046.v6v3/catalogue/burger-king-hsr-layout-bangalore-fast-food-e44br.jpg?clr=#5d4f09" alt=""></div>
+                <div>
+                    <h3>Burger</h3>
+                    <p>Indulge in burger perfection with our Signature Angus Chicken Burger: Juicy Angus Chicken patty, melted cheddar, fresh veggies, and secret sauce on a toasted brioche bun—a symphony of flavors in every bite.</p>
+                    <p>@ ₹99</p>
+                </div>
+                <div>
+                    <p>Add</p>
+                    <div id="burger">0</div>
+                    <div>
+                        <button onclick="addBurger()">+</button><button onclick="removeBurger()">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menuItem">
+                <div><img src="https://static.toiimg.com/photo/52467119.cms" alt=""></div>
+                <div>
+                    <h3>Noodles</h3>
+                    <p>Savor the essence of the Far East with our delectable Noodles: A harmonious blend of wok-tossed noodles, fresh vegetables, and savory sauces that transport your taste buds to Asia with every forkful.</p>
+                    <p>@ ₹139</p>
+                </div>
+                <div>
+                    <p>Add</p>
+                    <div id="noodles">0</div>
+                    <div>
+                        <button onclick="addNoodles()">+</button><button onclick="removeNoodles()">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menuItem">
+                <div><img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg" alt=""></div>
+                <div>
+                    <h3>Biryani</h3>
+                    <p>Experience the rich tapestry of Indian flavors with our Biryani: Fragrant basmati rice cooked to perfection, layered with tender marinated meat or vegetables, and infused with aromatic spices—an exotic culinary journey in every spoonful.</p>
+                    <p>@ ₹219</p>
+                </div>
+                <div>
+                    <p>Add</p>
+                    <div id="biryani">0</div>
+                    <div>
+                        <button onclick="addBiryani()">+</button><button onclick="removeBiryani()">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menuItem">
+                <div><img src="https://img-global.cpcdn.com/recipes/2da8cad7018f8486/400x400cq70/photo.jpg" alt=""></div>
+                <div>
+                    <h3>Momo's</h3>
+                    <p>Discover the taste of the Himalayas with our Momos: Delicate dumplings filled with succulent meats or veggies, steamed to perfection and served with our signature dipping sauces—a taste of authentic Tibetan cuisine in every bite.</p>
+                    <p>@ ₹89</p>
+                </div>
+                <div>
+                    <p>Add</p>
+                    <div id="momo">0</div>
+                    <div>
+                        <button onclick="addMomo()">+</button><button onclick="removeMomo()">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menuItem">
+                <div><img src="https://www.daringgourmet.com/wp-content/uploads/2023/06/Dosa-Recipe-3.jpg" alt=""></div>
+                <div>
+                    <h3>Dosa</h3>
+                    <p>Embark on a culinary adventure with our Dosa: A thin, crispy South Indian crepe made from fermented rice and lentil batter, filled with a medley of savory or spiced ingredients, served with flavorful chutneys—a tantalizing journey for your taste buds.</p>
+                    <p>@ ₹129</p>
+                </div>
+                <div>
+                    <p>Add</p>
+                    <div id="dosa">0</div>
+                    <div>
+                        <button onclick="addDosa()">+</button><button onclick="removeDosa()">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="orderButton"><button id="placeOrder" onclick="placeOrder()">Place Order</button></div>
+    </div>
+
+    <!-- Popup Section -->
+    <div class="popupW" id="popupWindow1">
+        <p id="orderNo"></p>
+        <p>Total bill amount:</p>
+        <HR></HR>
+        <p id="total"></p>
+        <button onclick="pay()">Pay</button>
+        <button onclick="cancle()">Go Back</button>
+    </div>
+
+    <div class="popupW" id="popupWindow2">
+        <p>Order No. <span id="spanOrder"></span> is ready</p>
+        <p>Enjoy!</p>
+        <h1>Thankyou for coming!</h1>
+        <button onclick="goBack()">Go back</button>
+    </div>
+
+    <div class="popupW" id="popupWindow3">
+        <p>Your food is being cooked</p>
+        <p>Please wait...</p>
+    </div>
+
+    <div class="popupW" id="popupWindow4">
+        <p>You have to choose somthing to place order!</p>
+        <button onclick="emptyCartButton()">Go back</button>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="foot">
+        <div><img src="data:image/png;base64,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" alt=""><a href="https://www.instagram.com/_mihir_soni/" target="_blank">Insagram</a></div>
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAaVBMVEUAd7X///8AcLEEebb7/f4Debb9/v79/v8DeLY8l8Y7lsYAbbCcyuKlz+WQxN+Lwd0KfbiDvdvl8fcAc7O+3OwgiL6x1ehFnMlytNZqsNQZhLzF4O7w9/tSo81gqtGp0ebc7PUsjsJ8udngaOvIAAADg0lEQVRoge2abZeqIBCAGV7EjXItKjc1y/7/j7xD7m5AWHdD+uScs3s8kDzOIMwMDoGrSJ4lEC6H0ckVkUEiyeQPBC+ar+pjcqm+GsQMEAntUSuaQJQ+toZC8F+7U4KJBMKE6ltUwkAqJUgiEapCAJGwpSwVgxBGtyAJh4NKCVEH4AStRZNZC+1F0V5orgXN00FyukBzZekh2XsgbzFXCMIGSQlhTCsjegrMCEQQVXfF8rOrFYm3YxjCdFnw6zbdFkJHr6AgROjdGYAbATjXOlaXEISRcgN88GEZh3NJIuclBBF0BfzXr3EoYve1ACTXPViuOAO+izRYAMLUxVLEqBK7RQcggp48yHJ6SG5cjAWRsI/0A0FN9g6Ew2p6TZhae+a6pDDXwn67UKt++rcL3+Gts072sW4gDOn5L4VjRBa7rwT3LkarDMNvmeEf8EV0tDSyC9O++dZku4uPyEb8CdO6KrbNtvjQOt5rjXnGnGGkrKmibALfP+7jBQ6fs0lCvnHIn4Tlj2KBsTkJX4cGYgLH1yiD8n+A/LcgACevrHe7ujRXQYXCEFHaIsLNZjgMnMrjstm0nLebZnXodSi6Cbvfz3Zzk3Y97I/ozOxmE2Dkql5vnCS0OQbe+WAgoZbOjcUPpLBbeU0I7dprZi4xlZYyM8ENNP3d6h2DcPkj/Ab5vDVjkllrgg/DpfNA+HN59D3DKMTahW3ILbxoa3Ru/D75x59Uni6vQ3hZOL7N8j9+ePMqRMLmACNnGHce6FUItrcgA4ThCdwU9HUIjDLuVImAjB/4+EFnjCZXba6xv/SU8oLOOEhmvQgu5GRPShQER25Pl667nFrXeBmc7ZUSA8FxLyU1mSWtTw7Fm5S4ia/Ud5KsnVtM34dlrwiIxNkV31ZhhG1sXTh01sy/DkG7W55SqC9npcLXJBBvHEzPLFU4rCeBgBeHs7MDKaaA4A5ZWggvdXKzs5chGTSOn2XKTZlX02jiJnnGOU8O8ZO8u146CWTpQdYzZIbMkBkyQ2bIDJkhA+QmDsRqDkCs3tXTqH4FtiyDxx6BkMiW/ZO4K6eH/eom+27oy2nnNB+8DPfo9j5JgswBk/PVnj1sfnzTKMScPVpf7fMnzU97JzqDfCxvhMxfsf8Ake8pX3hLIUbqkhJtSkpSF8ccTXGMKSXqk5f5vKVg6Xpkkbz06j1FZJC6HO4fbRVnSvd35FUAAAAASUVORK5CYII=" alt=""><a href="https://www.linkedin.com/in/mihir-soni-775221261/" target="_blank">LinkdIn</a></div>
+        
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

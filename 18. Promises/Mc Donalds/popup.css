@@ -1,0 +1,33 @@
+.popupW{
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px 30px;
+    display: none;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+p{
+    font: 24px "Poppins";
+}
+.popupW>button{
+    width: 200px;
+    font: 24px "Poppins";
+    border-radius: 20px;
+    background-color: rgb(220, 188, 149);
+    cursor: pointer;
+}
+.popupW>button:active{
+    background-color: rgb(181, 144, 98);
+}
+#popupWindow2>h1{
+    font: 36px "Poppins";
+    font-weight: bold;
+}
+#popupWindow2>p{
+    margin-bottom: 5px;
+}
