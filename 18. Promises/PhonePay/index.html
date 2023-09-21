@@ -3,19 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>PayPhone</title>
 </head>
 <body>
     <div id="main">
-        <div><img src="" alt=""></div>
+        <div><img src="https://www.crazyspeedtech.com/wp-content/uploads/2019/02/word-image-31.png" alt=""></div>
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div onclick="sendMoney()">
+                <img src="https://static.thenounproject.com/png/2266514-200.png" alt="">
+                <p>Send Money to Friend</p>
+            </div>
+            <div onclick="addMoney()">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-add-money-1817245-1538119.png?f=webp" alt="">
+                <p>Add Money to Bank</p>
+            </div>
+            <div onclick="checkBallance()">
+                <img src="https://static.thenounproject.com/png/4577563-200.png" alt="">
+                <p>Bank Ballance</p>
+            </div>
+            <div  onclick="recharge()">
+                <img src="https://static.thenounproject.com/png/3390133-200.png" alt="">
+                <p>Mobile Recharge</p>
+            </div>
         </div>
     </div>
+
+    <div class="popup" id="sendMoneyWindow1">
+        <img src="https://cdn-icons-png.flaticon.com/512/336/336221.png" alt="">
+        <div><input id="sendNum" type="text" placeholder="Enter Name Or Number"></div>
+        <div><input id="sendAmt" type="number" placeholder="Enter The Amount"></div>
+        <div><button onclick="sendM()">Send</button></div>
+    </div>
+    <div class="popup" id="sendMoneyWindow2">
+        <p>Sending money is in progress</p>
+        <p>Please wait for a moment...</p>
+    </div>
+    <div class="popup" id="sendMoneyWindow3">
+        <img src="https://cdn-icons-png.flaticon.com/512/336/336221.png" alt="">
+        <p id="sendMsg"></p>
+    </div>
+    <div class="popup" id="sendMoneyWindow4">
+        <img src="https://cdn-icons-png.flaticon.com/512/336/336221.png" alt="">
+        <p>You don't have enough money in your Bank account!</p>
+    </div>
+    <div class="popup" id="sendMoneyWindow5">
+        <img src="https://cdn-icons-png.flaticon.com/512/336/336221.png" alt="">
+        <p>Please fill all details!</p>
+    </div>
+
+    <div class="popup" id="addMoneyWindow1">
+        <img src="https://cdn-icons-png.flaticon.com/512/336/336221.png" alt="">
+        <div><input id="addAmt" type="number" placeholder="Enter the amount"></div>
+        <div><button onclick="addM()">Add Money to Bank</button></div>
+    </div>
+    <div class="popup" id="addMoneyWindow2">
+        <p>Adding money is in progress</p>
+        <p>Please wait for a moment...</p>
+    </div>
+    <div class="popup" id="addMoneyWindow3">
+        <img src="https://cdn-icons-png.flaticon.com/512/336/336221.png" alt="">
+        <p id="addMsg"></p>
+    </div>
+
+    <div class="popup" id="checkBalanceWindow1">
+        <img src="https://cdn-icons-png.flaticon.com/512/336/336221.png" alt="">
+        <p id="checkMsg"></p>
+    </div>
+    <div class="popup" id="checkBalanceWindow2">
+        <p>Please wait</p>
+        <p>We are fetching your account details...</p>
+    </div>
+
+
+    <div class="popup" id="rechargeWindow1">
+        <img src="https://cdn-icons-png.flaticon.com/512/336/336221.png" alt="">
+        <div><input id="rechargeNum" type="text"  placeholder="Enter Name or Number"></div>
+        <div><input id="rechargeAmt" type="number" placeholder="Enter amount"></div>
+        <div><button onclick="rechargeM()">Recharge</button></div>
+    </div>
+    <div class="popup" id="rechargeWindow2">
+        <p>Recharging is in process</p>
+        <p>Please wait for a moment...</p>
+    </div>
+    <div class="popup" id="rechargeWindow3">
+        <img src="https://cdn-icons-png.flaticon.com/512/336/336221.png" alt="">
+        <p id="rechargeMsg"></p>
+        <p id="rechargeMsg"></p>
+    </div>
+
+
 </body>
 <script src="main.js"></script>
 </html>
