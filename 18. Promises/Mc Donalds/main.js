@@ -14,44 +14,35 @@ let dosa = document.getElementById("dosa");
 
 
 
-function addBurger(){
-    burger.innerText++;
+function addItem(Item){
+    if(Item=='burger') burger.innerText++;
+    if(Item=='noodles') noodles.innerText++;
+    if(Item=='biryani') biryani.innerText++;
+    if(Item=='momo') momo.innerText++;
+    if(Item=='dosa') dosa.innerText++;
+    
 }
-function removeBurger(){
-    burger.innerText--;
-    if(burger.innerText<0) burger.innerText=0;
-}
-
-function addNoodles(){
-    noodles.innerText++;
-}
-function removeNoodles(){
-    noodles.innerText--;
-    if(noodles.innerText<0) noodles.innerText=0;
-}
-
-function addBiryani(){
-    biryani.innerText++;
-}
-function removeBiryani(){
-    biryani.innerText--;
-    if(biryani.innerText<0) biryani.innerText=0;
-}
-
-function addMomo(){
-    momo.innerText++;
-}
-function removeMomo(){
-    momo.innerText--;
-    if(momo.innerText<0) momo.innerText=0;
-}
-
-function addDosa(){
-    dosa.innerText++;
-}
-function removeDosa(){
-    dosa.innerText--;
-    if(dosa.innerText<0) dosa.innerText=0;
+function removeItem(Item){
+    if(Item=='burger'){
+        burger.innerText--;
+        if(burger.innerText<0) burger.innerText=0;
+    }
+    if(Item=='noodles'){
+        noodles.innerText--;
+        if(noodles.innerText<0) noodles.innerText=0;
+    }
+    if(Item=='biryani'){
+        biryani.innerText--;
+        if(biryani.innerText<0) biryani.innerText=0;
+    }
+    if(Item=='momo'){
+        momo.innerText--;
+        if(momo.innerText<0) momo.innerText=0;
+    }
+    if(Item=='dosa'){
+        dosa.innerText--;
+        if(dosa.innerText<0) dosa.innerText=0;
+    }
 }
 
 function placeOrder(){
