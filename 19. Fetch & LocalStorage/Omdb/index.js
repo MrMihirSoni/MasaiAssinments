@@ -12,8 +12,6 @@ let search = async ()=>{
     try{
         let URL = await fetch(`https://www.omdbapi.com/?apikey=1f89b8&s=${movieName}`)
         let data = await URL.json();
-        
-        console.log(data)
 
         let home = document.getElementById('home');
         home.style.display = 'none'
