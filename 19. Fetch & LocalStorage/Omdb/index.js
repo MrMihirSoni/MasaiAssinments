@@ -1,5 +1,6 @@
 let rootElement = document.getElementById('root');
-let root2Element = document.getElementById('root-2')
+let root2Element = document.getElementById('root-2');
+let errorElement = document.getElementById('error');
 
 let search = async ()=>{
     rootElement.style.display = 'block';
@@ -7,33 +8,40 @@ let search = async ()=>{
     root2Element.style.display = 'none';
     rootElement.innerHTML = '';
     let movieName = document.getElementById("movieName").value;
-    let URL = await fetch(`https://www.omdbapi.com/?apikey=1f89b8&s=${movieName}`)
-    let data = await URL.json();
-    
-
-    let home = document.getElementById('home');
-    home.style.display = 'none'
-
-    for(let i of data.Search){
-        let movieCard = document.createElement('div');
-        let imgData = document.createElement('img');
-        let movieName = document.createElement('p');
-        let releaseYear = document.createElement('p');
+    errorElement.style.display='none'
+    try{
+        let URL = await fetch(`https://www.omdbapi.com/?apikey=1f89b8&s=${movieName}`)
+        let data = await URL.json();
         
-        imgData.src = i.Poster;
-        movieName.textContent = i.Title;
-        releaseYear.textContent = i.Year;
+        console.log(data)
 
-        movieCard.append(imgData,movieName, releaseYear);
-        rootElement.append(movieCard);
-    }
-    let movieCard = document.querySelectorAll('#root>div');
-    movieCard.forEach(element=>{
-        let nameOfMovie = element.children.item(1).innerHTML
-        element.addEventListener('click', ()=>{
-            moviePage(nameOfMovie);
+        let home = document.getElementById('home');
+        home.style.display = 'none'
+
+        for(let i of data.Search){
+            let movieCard = document.createElement('div');
+            let imgData = document.createElement('img');
+            let movieName = document.createElement('p');
+            let releaseYear = document.createElement('p');
+            
+            imgData.src = i.Poster;
+            movieName.textContent = i.Title;
+            releaseYear.textContent = i.Year;
+
+            movieCard.append(imgData,movieName, releaseYear);
+            rootElement.append(movieCard);
+        }
+        let movieCard = document.querySelectorAll('#root>div');
+        movieCard.forEach(element=>{
+            let nameOfMovie = element.children.item(1).innerHTML
+            element.addEventListener('click', ()=>{
+                moviePage(nameOfMovie);
+            })
         })
-    })
+    }
+    catch(error){
+        errorElement.style.display = 'flex'
+    }
 }
 
 let moviePage = async (nameOfMovie)=>{
