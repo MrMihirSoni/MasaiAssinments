@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font: 44px "Poppins";
+    font-weight: bold;
+}
+tbody>tr>td>button{
+    background-color: rgb(126, 23, 23);
+    color: bisque;
+    padding:5px;
+    font: 18px 'Poppins';
+    border-radius: 20px;
+}
+table{
+    margin: auto;
+    border-collapse:collapse;
+    
+}
+table td,
+table th {
+  border: 2px solid #9e8585;
+  padding: 8px;
+  font: 24px 'Poppins';
+}
+table th{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
