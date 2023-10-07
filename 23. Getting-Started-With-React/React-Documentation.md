@@ -64,7 +64,7 @@ So, ReactDOM is responsible for taking your React components and inserting them 
    7. Adding Additional Packages (Optional): Install and configure additional packages as needed.
    8. Build for Production: Create a production build with npm run build.
    9. Deploy Your React App: Deploy to a hosting service or platform.
-  10. Testing and Maintenance: Write tests, update dependencies, and maintain the app over time.
+   10. Testing and Maintenance: Write tests, update dependencies, and maintain the app over time.
 
 
 
