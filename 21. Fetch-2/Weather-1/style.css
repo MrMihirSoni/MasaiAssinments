@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+#searchDiv{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #464343;
+}
+#searchDiv>#search{
+    font: 18px 'Poppins';
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+#searchDiv>img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+#container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#weather{
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 20px;
+    visibility: hidden;
+}
+#weather>div>h2{
+    font: 36px "Poppins";
+}
+#weather>div>h3{
+    font: 24px 'Poppins';
+    margin-top: 15px;
+}
+#weather>div>h2,#weather>div>h3{
+    font-weight: bold;
+}
+#weather>div>p{
+    margin-top: 10px;
+    font: 24px 'Poppins';
+}
+#container>#weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#temp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#gmap_canvas{
+    border-radius: 20px;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+}
