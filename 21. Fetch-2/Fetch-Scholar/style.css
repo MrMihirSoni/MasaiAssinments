@@ -22,6 +22,7 @@ body{
     background-color: #fff;
     border-radius: 20px;
     cursor: pointer;
+    padding: 15px;
 }
 #root>div:hover{
     box-shadow: rgba(228, 157, 157) 0px 22px 70px 4px;
@@ -96,6 +97,8 @@ body{
 }
 #root2>div:first-child>img{
     width: 100%;
+    margin-top: 30px;
+    border-radius: 30px;
 }
 #root2>div:nth-child(2)>h1{
     margin-top: 40px;
@@ -111,4 +114,11 @@ body{
     font: 24px 'Poppins';
     font-weight: bold;
     margin-top: 20px;
+}
+#root2>div:nth-child(2)>p>span{
+    color: #797979;
+}
+#root2>div:nth-child(2)>h2>span{
+    color: #797979;
+
 }

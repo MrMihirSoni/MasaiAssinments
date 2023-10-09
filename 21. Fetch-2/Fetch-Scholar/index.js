@@ -75,13 +75,13 @@ let itemDescription = async (id)=>{
         let title = document.createElement('h1');
         title.textContent = data.title;
         let price = document.createElement('h2');
-        price.textContent = `Price : ${data.price}`;
+        price.innerHTML = `Price : <span>₹${data.price}</span>`;
         let description = document.createElement('p');
         description.textContent = `Description : ${data.description}`;
         let category = document.createElement('p');
-        category.textContent = `Categoty : ${data.category}`;
+        category.innerHTML = `Categoty : <span>${data.category}</span>`;
         let rating = document.createElement('p');
-        rating.textContent = `Ratings : ${data.rating.rate}`;
+        rating.innerHTML = `Ratings : <span>${data.rating.rate}</span>`;
         dataDiv.append(title,price,rating,description,category);
         dataDiv.style.backgroundColor = 'white'
         root2Element.append(imgDiv,dataDiv);
