@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+#searchDiv{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #464343;
+}
+#searchDiv>#search{
+    font: 18px 'Poppins';
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+#searchDiv>img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+#container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#weather{
+    background-color: yellow;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+    padding: 15px;
+    border-radius: 20px;
+    visibility: hidden;
+}
+#weather>div>h2{
+    font: 36px "Poppins";
+}
+#weather>div>h3{
+    font: 24px 'Poppins';
+    margin-top: 15px;
+}
+#weather>div>h2,#weather>div>h3{
+    font-weight: bold;
+}
+#weather>div>p{
+    margin-top: 10px;
+    font: 24px 'Poppins';
+}
+#container>#weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#temp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#gmap_canvas{
+    border-radius: 20px;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+}
+#forecast{
+    margin-top: 50px;
+}
+#main{
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    width: 95%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 3px;
+}
+#main>div{
+    border: 1px solid black;
+    padding: 3px;
+    background-color: rgb(176, 67, 67);
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#main>div>p{
+    font: 18px 'Poppins';
+    color: rgb(48, 51, 51);
+}
