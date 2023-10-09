@@ -6,14 +6,12 @@ let searchCity = ()=>{
     if(search.value!=''){
         weather();
         map();
-        // forecast();
-        search.value=''
+        search.value='';
     }
 }
 
 let weather = async ()=>{
     weatherDetails.innerHTML = '';
-    
     try {
         let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search.value}&APPID=023f609ca2f4a868b6c04d8448dec5e2`);
         let data = await res.json();
@@ -34,7 +32,7 @@ let weather = async ()=>{
         tempCard.append(temp,temparature,temp2);
 
         let iconCard = document.createElement('div');
-        iconCard.id = 'icon'
+        iconCard.id = 'icon';
         let iconId = data.weather[0].icon;
         let icon = document.createElement('img');
         icon.src = `http://openweathermap.org/img/wn/${iconId}.png`;
@@ -51,25 +49,24 @@ let weather = async ()=>{
         let wind = document.createElement('p');
         wind.textContent = `Wind Speed: ${data.wind.speed}Km/h`;
         windCard.append(wind);
-
-        weatherDetails.append(cityCard,tempCard,iconCard,humidityCard,windCard)
+        weatherDetails.append(cityCard,tempCard,iconCard,humidityCard,windCard);
 
         let cityId = data.id;
         forecast(cityId);
     } catch (error) {
         console.log(error)
     }
-    weatherDetails.style.visibility = 'visible'
+    weatherDetails.style.visibility = 'visible';
 }
 
 let map = ()=>{
     mapDetails.innerHTML = `
-    <div class="gmap_canvas">
+            <div class="gmap_canvas">
                 <iframe width="800" height="400" id="gmap_canvas"
                   src="https://maps.google.com/maps?q=${search.value}t=&z=11&ie=UTF8&iwloc=&output=embed"
                   frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                 </iframe>
-              </div>
+            </div>
     `
 }
 
@@ -77,15 +74,12 @@ let forecast = async (id)=>{
     forecastDetails.innerHTML='';
     let res = await fetch(`http://api.openweathermap.org/data/2.5/forecast?id=${id}&appid=023f609ca2f4a868b6c04d8448dec5e2`);
     let data = await res.json();
-    console.log(data)
 
     let mainDiv = document.createElement('div');
     mainDiv.id = 'main';
     for(let i=0; i<data.list.length; i++){
         let detailCard = document.createElement('div');
         let date = new Date(data.list[i].dt_txt);
-        console.log(date)
-
         let dateEle = document.createElement('p');
         dateEle.textContent = `${date.getDate()}/${date.getMonth()+1}`;
 
