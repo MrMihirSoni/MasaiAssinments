@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Masai Bank</h1>
+
+    <div>
+      <!-- ***** We are using form here  ****  -->
+      <form>
+        <label for="">Account Number</label><br />
+        <input id="accNo" type="number" placeholder="Enter Account Number" /><br />
+
+        <label for="">Account Holder's Name</label><br />
+        <input id="accHName" type="text" placeholder="Enter Name"/><br />
+
+        <label for="">Account Type</label><br />
+        <select id="accType">
+          <option value="">Select</option>
+          <option value="Savings">Savings Account</option>
+          <option value="Current">Current Account</option>
+          <option value="Overseas">Overseas Account</option>
+        </select><br />
+
+        <label for="">Balance</label><br />
+        <input id="balance" type="number" placeholder="Balance" /><br />
+
+        <input type="submit" />
+      </form>
+      <table>
+        <!-- Dont change order of columns -->
+        <thead>
+          <tr>
+            <th>Account No.</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Balance</th>
+            <th>-------</th>
+            <th>-------</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Append your output here -->
+        </tbody>
+      </table>
+    </div>
+</body>
+<script src="front.js"></script>
+<script src="bankAccount.js"></script>
+</html>
