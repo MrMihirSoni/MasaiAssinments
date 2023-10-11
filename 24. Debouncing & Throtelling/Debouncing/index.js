@@ -49,6 +49,7 @@ let search = async ()=>{
 }
 
 let moviePage = async (nameOfMovie)=>{
+    movieName.value = ''
     root2Element.innerHTML='';
     rootElement.style.display = 'none';
     root2Element.style.display = 'block';
