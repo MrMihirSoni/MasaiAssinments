@@ -22,4 +22,12 @@
     width: max-content;
     padding: 10px;
     margin: auto;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+}
+#searchRes>div{
+    margin: 5px;
+    font-size: 18px;
 }
