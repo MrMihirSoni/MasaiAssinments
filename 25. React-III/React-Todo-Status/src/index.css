@@ -1,0 +1,39 @@
+.add-task{
+    width: max-content;
+    margin: auto;
+}
+.add-task>input{
+    font-size: 24px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+}
+.add-task>button{
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.taskItem{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid gray;
+    padding: 0 20px;
+}
+.taskItem>p{
+    font-size: 24px;
+}
+.delDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delDiv>button{
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: red;
+    
+}
