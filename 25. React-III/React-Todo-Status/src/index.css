@@ -1,3 +1,7 @@
+.head>h1{
+    text-align: center;
+    font-size: 48px;
+}
 .add-task{
     width: max-content;
     margin: auto;
@@ -16,24 +20,40 @@
 .taskItem{
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    max-width: 800px;
     margin: auto;
     margin-top: 20px;
     border: 1px solid gray;
     padding: 0 20px;
 }
-.taskItem>p{
+.taskItem>div>p{
     font-size: 24px;
+}
+.taskItem>div:first-child{
+    width: 40%;
+    border-right: 1px solid gray;
+}
+.taskItem>div:nth-child(2){
+    display: flex;
+    align-items: center;
 }
 .delDiv{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 35%;
+    border-left: 1px solid gray ;
 }
 .delDiv>button{
     font-size: 18px;
     padding: 5px;
     border-radius: 20px;
     background-color: red;
-    
+    margin:5px;
+}
+.delDiv>p{
+    margin-left: 50%;
+    display: block;
+    font-size: 24px;
+    transform: translate(-50%, 0);
 }
